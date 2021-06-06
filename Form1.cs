@@ -47,5 +47,15 @@ namespace ContactTracing
             View form2 = new View();
             form2.ShowDialog();
         }
+
+        private void ContactBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FirstNameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

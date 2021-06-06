@@ -29,6 +29,7 @@ namespace ContactTracing
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.fname = new System.Windows.Forms.Label();
             this.lname = new System.Windows.Forms.Label();
             this.contactnum = new System.Windows.Forms.Label();
@@ -49,93 +50,102 @@ namespace ContactTracing
             this.TempBox = new System.Windows.Forms.TextBox();
             this.ClearButton = new System.Windows.Forms.Button();
             this.View = new System.Windows.Forms.Button();
+            this.note = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // fname
             // 
             this.fname.AutoSize = true;
-            this.fname.Location = new System.Drawing.Point(42, 53);
+            this.fname.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fname.Location = new System.Drawing.Point(26, 55);
             this.fname.Name = "fname";
-            this.fname.Size = new System.Drawing.Size(60, 13);
+            this.fname.Size = new System.Drawing.Size(78, 16);
             this.fname.TabIndex = 0;
             this.fname.Text = "First Name:";
             // 
             // lname
             // 
             this.lname.AutoSize = true;
-            this.lname.Location = new System.Drawing.Point(42, 81);
+            this.lname.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lname.Location = new System.Drawing.Point(26, 83);
             this.lname.Name = "lname";
-            this.lname.Size = new System.Drawing.Size(61, 13);
+            this.lname.Size = new System.Drawing.Size(76, 16);
             this.lname.TabIndex = 0;
             this.lname.Text = "Last Name:";
             // 
             // contactnum
             // 
             this.contactnum.AutoSize = true;
-            this.contactnum.Location = new System.Drawing.Point(42, 166);
+            this.contactnum.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactnum.Location = new System.Drawing.Point(26, 168);
             this.contactnum.Name = "contactnum";
-            this.contactnum.Size = new System.Drawing.Size(87, 13);
+            this.contactnum.Size = new System.Drawing.Size(112, 16);
             this.contactnum.TabIndex = 0;
             this.contactnum.Text = "Contact Number:";
             // 
             // addr
             // 
             this.addr.AutoSize = true;
-            this.addr.Location = new System.Drawing.Point(42, 225);
+            this.addr.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addr.Location = new System.Drawing.Point(26, 227);
             this.addr.Name = "addr";
-            this.addr.Size = new System.Drawing.Size(48, 13);
+            this.addr.Size = new System.Drawing.Size(62, 16);
             this.addr.TabIndex = 0;
             this.addr.Text = "Address:";
             // 
             // age
             // 
             this.age.AutoSize = true;
-            this.age.Location = new System.Drawing.Point(42, 137);
+            this.age.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.age.Location = new System.Drawing.Point(26, 139);
             this.age.Name = "age";
-            this.age.Size = new System.Drawing.Size(29, 13);
+            this.age.Size = new System.Drawing.Size(37, 16);
             this.age.TabIndex = 0;
             this.age.Text = "Age:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(88, 18);
+            this.label7.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(72, 12);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(154, 13);
+            this.label7.Size = new System.Drawing.Size(201, 16);
             this.label7.TabIndex = 0;
             this.label7.Text = "Covid-19 Contact Tracing Form";
             // 
             // FirstNameBox
             // 
-            this.FirstNameBox.Location = new System.Drawing.Point(145, 50);
+            this.FirstNameBox.Location = new System.Drawing.Point(145, 52);
             this.FirstNameBox.Name = "FirstNameBox";
             this.FirstNameBox.Size = new System.Drawing.Size(151, 20);
             this.FirstNameBox.TabIndex = 1;
+            this.FirstNameBox.TextChanged += new System.EventHandler(this.FirstNameBox_TextChanged);
             // 
             // LastNameBox
             // 
-            this.LastNameBox.Location = new System.Drawing.Point(145, 78);
+            this.LastNameBox.Location = new System.Drawing.Point(145, 80);
             this.LastNameBox.Name = "LastNameBox";
             this.LastNameBox.Size = new System.Drawing.Size(151, 20);
             this.LastNameBox.TabIndex = 2;
             // 
             // AgeBox
             // 
-            this.AgeBox.Location = new System.Drawing.Point(145, 136);
+            this.AgeBox.Location = new System.Drawing.Point(145, 138);
             this.AgeBox.Name = "AgeBox";
             this.AgeBox.Size = new System.Drawing.Size(58, 20);
             this.AgeBox.TabIndex = 2;
             // 
             // ContactBox
             // 
-            this.ContactBox.Location = new System.Drawing.Point(146, 162);
+            this.ContactBox.Location = new System.Drawing.Point(146, 164);
             this.ContactBox.Name = "ContactBox";
             this.ContactBox.Size = new System.Drawing.Size(151, 20);
             this.ContactBox.TabIndex = 2;
+            this.ContactBox.TextChanged += new System.EventHandler(this.ContactBox_TextChanged);
             // 
             // AddressBox
             // 
-            this.AddressBox.Location = new System.Drawing.Point(145, 225);
+            this.AddressBox.Location = new System.Drawing.Point(145, 227);
             this.AddressBox.Multiline = true;
             this.AddressBox.Name = "AddressBox";
             this.AddressBox.Size = new System.Drawing.Size(151, 79);
@@ -147,7 +157,7 @@ namespace ContactTracing
             this.GenderBox.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.GenderBox.Location = new System.Drawing.Point(145, 109);
+            this.GenderBox.Location = new System.Drawing.Point(145, 111);
             this.GenderBox.Name = "GenderBox";
             this.GenderBox.Size = new System.Drawing.Size(81, 21);
             this.GenderBox.TabIndex = 3;
@@ -155,15 +165,17 @@ namespace ContactTracing
             // gender
             // 
             this.gender.AutoSize = true;
-            this.gender.Location = new System.Drawing.Point(43, 112);
+            this.gender.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gender.Location = new System.Drawing.Point(27, 114);
             this.gender.Name = "gender";
-            this.gender.Size = new System.Drawing.Size(42, 13);
+            this.gender.Size = new System.Drawing.Size(53, 16);
             this.gender.TabIndex = 0;
             this.gender.Text = "Gender";
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(145, 351);
+            this.saveButton.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveButton.Location = new System.Drawing.Point(145, 353);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
             this.saveButton.TabIndex = 4;
@@ -174,15 +186,16 @@ namespace ContactTracing
             // emailadd
             // 
             this.emailadd.AutoSize = true;
-            this.emailadd.Location = new System.Drawing.Point(42, 198);
+            this.emailadd.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailadd.Location = new System.Drawing.Point(26, 200);
             this.emailadd.Name = "emailadd";
-            this.emailadd.Size = new System.Drawing.Size(76, 13);
+            this.emailadd.Size = new System.Drawing.Size(102, 16);
             this.emailadd.TabIndex = 0;
             this.emailadd.Text = "Email Address:";
             // 
             // EmailBox
             // 
-            this.EmailBox.Location = new System.Drawing.Point(146, 195);
+            this.EmailBox.Location = new System.Drawing.Point(146, 197);
             this.EmailBox.Name = "EmailBox";
             this.EmailBox.Size = new System.Drawing.Size(151, 20);
             this.EmailBox.TabIndex = 2;
@@ -190,22 +203,24 @@ namespace ContactTracing
             // temp
             // 
             this.temp.AutoSize = true;
-            this.temp.Location = new System.Drawing.Point(43, 316);
+            this.temp.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.temp.Location = new System.Drawing.Point(27, 318);
             this.temp.Name = "temp";
-            this.temp.Size = new System.Drawing.Size(90, 13);
+            this.temp.Size = new System.Drawing.Size(116, 16);
             this.temp.TabIndex = 0;
             this.temp.Text = "Temperature (°C):";
             // 
             // TempBox
             // 
-            this.TempBox.Location = new System.Drawing.Point(145, 313);
+            this.TempBox.Location = new System.Drawing.Point(145, 315);
             this.TempBox.Name = "TempBox";
             this.TempBox.Size = new System.Drawing.Size(58, 20);
             this.TempBox.TabIndex = 2;
             // 
             // ClearButton
             // 
-            this.ClearButton.Location = new System.Drawing.Point(145, 379);
+            this.ClearButton.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearButton.Location = new System.Drawing.Point(145, 381);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(75, 23);
             this.ClearButton.TabIndex = 6;
@@ -215,7 +230,8 @@ namespace ContactTracing
             // 
             // View
             // 
-            this.View.Location = new System.Drawing.Point(146, 408);
+            this.View.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.View.Location = new System.Drawing.Point(146, 410);
             this.View.Name = "View";
             this.View.Size = new System.Drawing.Size(75, 23);
             this.View.TabIndex = 7;
@@ -223,11 +239,23 @@ namespace ContactTracing
             this.View.UseVisualStyleBackColor = true;
             this.View.Click += new System.EventHandler(this.View_Click_1);
             // 
+            // note
+            // 
+            this.note.AutoSize = true;
+            this.note.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.note.Location = new System.Drawing.Point(72, 28);
+            this.note.Name = "note";
+            this.note.Size = new System.Drawing.Size(200, 15);
+            this.note.TabIndex = 8;
+            this.note.Text = "DO NOT TYPE WHITE SPACES AT THE END";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(349, 436);
+            this.Controls.Add(this.note);
             this.Controls.Add(this.View);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.saveButton);
@@ -249,6 +277,7 @@ namespace ContactTracing
             this.Controls.Add(this.label7);
             this.Controls.Add(this.fname);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "Covid-19 Contact Tracing Form";
@@ -279,6 +308,7 @@ namespace ContactTracing
         private System.Windows.Forms.TextBox TempBox;
         private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.Button View;
+        private System.Windows.Forms.Label note;
     }
 }
 
