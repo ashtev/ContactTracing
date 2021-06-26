@@ -33,5 +33,10 @@ namespace ContactTracing
         {
 
         }
+
+        private void ReadFile_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

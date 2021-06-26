@@ -43,30 +43,34 @@ namespace ContactTracing
             // ReadFile
             // 
             this.ReadFile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ReadFile.Location = new System.Drawing.Point(18, 143);
+            this.ReadFile.Font = new System.Drawing.Font("Gobold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReadFile.Location = new System.Drawing.Point(18, 149);
             this.ReadFile.Name = "ReadFile";
             this.ReadFile.ReadOnly = true;
-            this.ReadFile.Size = new System.Drawing.Size(291, 310);
+            this.ReadFile.Size = new System.Drawing.Size(459, 131);
             this.ReadFile.TabIndex = 0;
             this.ReadFile.Text = "";
+            this.ReadFile.TextChanged += new System.EventHandler(this.ReadFile_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(72, 20);
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Coolvetica Rg", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label7.Location = new System.Drawing.Point(91, 11);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(201, 16);
+            this.label7.Size = new System.Drawing.Size(307, 25);
             this.label7.TabIndex = 1;
             this.label7.Text = "Covid-19 Contact Tracing Form";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // DisplayInfo
             // 
-            this.DisplayInfo.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayInfo.Location = new System.Drawing.Point(131, 112);
+            this.DisplayInfo.Font = new System.Drawing.Font("Gobold", 12F, System.Drawing.FontStyle.Italic);
+            this.DisplayInfo.Location = new System.Drawing.Point(323, 84);
             this.DisplayInfo.Name = "DisplayInfo";
-            this.DisplayInfo.Size = new System.Drawing.Size(75, 23);
+            this.DisplayInfo.Size = new System.Drawing.Size(75, 36);
             this.DisplayInfo.TabIndex = 2;
             this.DisplayInfo.Text = "View";
             this.DisplayInfo.UseVisualStyleBackColor = true;
@@ -75,8 +79,10 @@ namespace ContactTracing
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 61);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(95, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 16);
             this.label1.TabIndex = 3;
@@ -86,8 +92,10 @@ namespace ContactTracing
             // LastNameBox
             // 
             this.LastNameBox.AutoSize = true;
+            this.LastNameBox.BackColor = System.Drawing.Color.Transparent;
             this.LastNameBox.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastNameBox.Location = new System.Drawing.Point(15, 87);
+            this.LastNameBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.LastNameBox.Location = new System.Drawing.Point(95, 104);
             this.LastNameBox.Name = "LastNameBox";
             this.LastNameBox.Size = new System.Drawing.Size(76, 16);
             this.LastNameBox.TabIndex = 3;
@@ -96,14 +104,14 @@ namespace ContactTracing
             // 
             // FirstNameBox
             // 
-            this.FirstNameBox.Location = new System.Drawing.Point(102, 60);
+            this.FirstNameBox.Location = new System.Drawing.Point(182, 77);
             this.FirstNameBox.Name = "FirstNameBox";
             this.FirstNameBox.Size = new System.Drawing.Size(135, 20);
             this.FirstNameBox.TabIndex = 4;
             // 
             // LastNameB
             // 
-            this.LastNameB.Location = new System.Drawing.Point(102, 86);
+            this.LastNameB.Location = new System.Drawing.Point(182, 103);
             this.LastNameB.Name = "LastNameB";
             this.LastNameB.Size = new System.Drawing.Size(135, 20);
             this.LastNameB.TabIndex = 4;
@@ -111,8 +119,10 @@ namespace ContactTracing
             // NOTE2
             // 
             this.NOTE2.AutoSize = true;
+            this.NOTE2.BackColor = System.Drawing.Color.Transparent;
             this.NOTE2.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NOTE2.Location = new System.Drawing.Point(72, 36);
+            this.NOTE2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.NOTE2.Location = new System.Drawing.Point(142, 36);
             this.NOTE2.Name = "NOTE2";
             this.NOTE2.Size = new System.Drawing.Size(200, 15);
             this.NOTE2.TabIndex = 9;
@@ -123,7 +133,8 @@ namespace ContactTracing
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(329, 476);
+            this.BackgroundImage = global::ContactTracing.Properties.Resources._1;
+            this.ClientSize = new System.Drawing.Size(489, 305);
             this.Controls.Add(this.NOTE2);
             this.Controls.Add(this.LastNameB);
             this.Controls.Add(this.FirstNameBox);
