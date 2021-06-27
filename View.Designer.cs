@@ -44,10 +44,10 @@ namespace ContactTracing
             // 
             this.ReadFile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ReadFile.Font = new System.Drawing.Font("Gobold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReadFile.Location = new System.Drawing.Point(18, 149);
+            this.ReadFile.Location = new System.Drawing.Point(18, 138);
             this.ReadFile.Name = "ReadFile";
             this.ReadFile.ReadOnly = true;
-            this.ReadFile.Size = new System.Drawing.Size(459, 131);
+            this.ReadFile.Size = new System.Drawing.Size(346, 182);
             this.ReadFile.TabIndex = 0;
             this.ReadFile.Text = "";
             this.ReadFile.TextChanged += new System.EventHandler(this.ReadFile_TextChanged);
@@ -58,7 +58,7 @@ namespace ContactTracing
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Coolvetica Rg", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(91, 11);
+            this.label7.Location = new System.Drawing.Point(44, 14);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(307, 25);
             this.label7.TabIndex = 1;
@@ -68,7 +68,7 @@ namespace ContactTracing
             // DisplayInfo
             // 
             this.DisplayInfo.Font = new System.Drawing.Font("Gobold", 12F, System.Drawing.FontStyle.Italic);
-            this.DisplayInfo.Location = new System.Drawing.Point(362, 84);
+            this.DisplayInfo.Location = new System.Drawing.Point(289, 86);
             this.DisplayInfo.Name = "DisplayInfo";
             this.DisplayInfo.Size = new System.Drawing.Size(75, 36);
             this.DisplayInfo.TabIndex = 2;
@@ -82,7 +82,7 @@ namespace ContactTracing
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(95, 78);
+            this.label1.Location = new System.Drawing.Point(22, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 16);
             this.label1.TabIndex = 3;
@@ -95,7 +95,7 @@ namespace ContactTracing
             this.LastNameBox.BackColor = System.Drawing.Color.Transparent;
             this.LastNameBox.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LastNameBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LastNameBox.Location = new System.Drawing.Point(95, 104);
+            this.LastNameBox.Location = new System.Drawing.Point(22, 106);
             this.LastNameBox.Name = "LastNameBox";
             this.LastNameBox.Size = new System.Drawing.Size(76, 16);
             this.LastNameBox.TabIndex = 3;
@@ -104,14 +104,14 @@ namespace ContactTracing
             // 
             // FirstNameBox
             // 
-            this.FirstNameBox.Location = new System.Drawing.Point(182, 77);
+            this.FirstNameBox.Location = new System.Drawing.Point(109, 79);
             this.FirstNameBox.Name = "FirstNameBox";
             this.FirstNameBox.Size = new System.Drawing.Size(135, 20);
             this.FirstNameBox.TabIndex = 4;
             // 
             // LastNameB
             // 
-            this.LastNameB.Location = new System.Drawing.Point(182, 103);
+            this.LastNameB.Location = new System.Drawing.Point(109, 105);
             this.LastNameB.Name = "LastNameB";
             this.LastNameB.Size = new System.Drawing.Size(135, 20);
             this.LastNameB.TabIndex = 4;
@@ -122,7 +122,7 @@ namespace ContactTracing
             this.NOTE2.BackColor = System.Drawing.Color.Transparent;
             this.NOTE2.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NOTE2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.NOTE2.Location = new System.Drawing.Point(142, 36);
+            this.NOTE2.Location = new System.Drawing.Point(95, 39);
             this.NOTE2.Name = "NOTE2";
             this.NOTE2.Size = new System.Drawing.Size(200, 15);
             this.NOTE2.TabIndex = 9;
@@ -134,7 +134,7 @@ namespace ContactTracing
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BackgroundImage = global::ContactTracing.Properties.Resources._1;
-            this.ClientSize = new System.Drawing.Size(489, 305);
+            this.ClientSize = new System.Drawing.Size(387, 343);
             this.Controls.Add(this.NOTE2);
             this.Controls.Add(this.LastNameB);
             this.Controls.Add(this.FirstNameBox);
