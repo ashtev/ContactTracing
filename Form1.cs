@@ -10,13 +10,14 @@ namespace ContactTracing
         {
             InitializeComponent();
         }
-
+        //StreamWriter to write file of with data entered by user
         private void saveButton_Click(object sender, EventArgs e)
         {
-            StreamWriter sw = new StreamWriter(Application.StartupPath + "\\Contacts\\" +
-                FirstNameBox.Text + " " + LastNameBox.Text + ".txt");
+            StreamWriter sw = new StreamWriter(Application.StartupPath + "\\Contacts\\" +  
+            FirstNameBox.Text + " " + LastNameBox.Text + ".txt");
 
-            sw.WriteLine(fname.Text + " " + FirstNameBox.Text);
+            //input name and other details
+            sw.WriteLine(fname.Text + " " + FirstNameBox.Text);             
             sw.WriteLine(lname.Text + " " + LastNameBox.Text);
             sw.WriteLine(gender.Text + " " + GenderBox.Text);
             sw.WriteLine(age.Text + " " + AgeBox.Text);
@@ -24,11 +25,11 @@ namespace ContactTracing
             sw.WriteLine(emailadd.Text + " " + EmailBox.Text);
             sw.WriteLine(addr.Text + " " + AddressBox.Text);
             sw.WriteLine(temp.Text + " " + TempBox.Text);
-            System.Windows.Forms.MessageBox.Show("Information Saved!");
-            sw.Close();
+            System.Windows.Forms.MessageBox.Show("Information Saved!");  //Textbox to show if info is saved
+            sw.Close(); 
 
         }
-
+        //Clears entry
         private void ClearButton_Click(object sender, EventArgs e)
         {
             FirstNameBox.Clear();
@@ -41,7 +42,7 @@ namespace ContactTracing
             TempBox.Clear();
 
         }
-
+        //shows Viewing page 
         private void View_Click_1(object sender, EventArgs e)
         {
             View form2 = new View();

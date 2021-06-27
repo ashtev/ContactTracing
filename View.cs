@@ -10,7 +10,7 @@ namespace ContactTracing
         {
             InitializeComponent();
         }
-
+        //To read saved file
         private void DisplayInfo_Click(object sender, EventArgs e)
         {
             StreamReader sr = new StreamReader(Application.StartupPath + "\\Contacts\\" +

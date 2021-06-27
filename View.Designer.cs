@@ -68,7 +68,7 @@ namespace ContactTracing
             // DisplayInfo
             // 
             this.DisplayInfo.Font = new System.Drawing.Font("Gobold", 12F, System.Drawing.FontStyle.Italic);
-            this.DisplayInfo.Location = new System.Drawing.Point(323, 84);
+            this.DisplayInfo.Location = new System.Drawing.Point(362, 84);
             this.DisplayInfo.Name = "DisplayInfo";
             this.DisplayInfo.Size = new System.Drawing.Size(75, 36);
             this.DisplayInfo.TabIndex = 2;
